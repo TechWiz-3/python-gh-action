@@ -8,4 +8,4 @@ RUN pip install -r requirements.txt
 
 RUN chmod +x action
 
-ENTRYPOINT ["action"]
+ENTRYPOINT ["./action.py"]

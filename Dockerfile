@@ -1,11 +1,11 @@
 FROM python:latest
 
-ADD ./actions /actions
+ADD ./action /action
 
 ADD requirements.txt src/requirements.txt
 
 RUN pip install -r requirements.txt
 
-RUN chmod +x actions
+RUN chmod +x action
 
-ENTRYPOINT ["/actions"]
+ENTRYPOINT ["action"]

@@ -1,6 +1,6 @@
 FROM python:latest
 
-ADD ./action /action
+ADD ./action.py /action.py
 
 ADD src/requirements.txt requirements.txt
 

@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Run action
-        uses: TechWiz-3/python-gh-action@master
+        uses: TechWiz-3/python-gh-action@main
         #with:
         #  files: test.md
         #  blacklist:  https://www.github.com/paramt/this-doesnt-exist

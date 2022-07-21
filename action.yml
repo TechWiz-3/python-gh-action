@@ -1,7 +1,7 @@
 # action.yml
 name: 'Python GHTest'
 description: 'Greet someone and record the time'
-inputs:
+#inputs:
 #  who:  # id of input
 #    description: 'Who to greet'
 #    required: true

@@ -6,6 +6,9 @@ inputs:
     description: 'Passing in a variable'
     required: true
     default: 'my var number 1'
+  var2:
+    description: 'Variable that isn"t required'
+    required: false
 # outputs:
 #  time: # id of output
 #    description: 'The time we greeted you'

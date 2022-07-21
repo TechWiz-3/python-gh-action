@@ -1,4 +1,5 @@
 # Creating a gh action in Python
+## Proper explanation - versions - links and commenting coming soon
 
 To create a github action in Python, we must use a Docker container to run python. This repo explores how we run python scripts, input variables, get them, manage them and work with them... More info coming soon.  
 

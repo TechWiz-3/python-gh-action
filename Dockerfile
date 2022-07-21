@@ -2,7 +2,7 @@ FROM python:latest
 
 ADD ./action /action
 
-ADD requirements.txt src/requirements.txt
+ADD src.requirements.txt requirements.txt
 
 RUN pip install -r requirements.txt
 

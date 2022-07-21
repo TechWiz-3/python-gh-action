@@ -1,11 +1,11 @@
 # action.yml
 name: 'Python GHTest'
 description: 'Greet someone and record the time'
-#inputs:
-#  who:  # id of input
-#    description: 'Who to greet'
-#    required: true
-#    default: 'World'
+inputs:
+  var1:  # id of input
+    description: 'Passing in a variable'
+    required: true
+    default: 'my var number 1'
 # outputs:
 #  time: # id of output
 #    description: 'The time we greeted you'

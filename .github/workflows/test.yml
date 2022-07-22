@@ -7,9 +7,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Run action
+        # username/repo@branch/versiontag
         uses: TechWiz-3/python-gh-action@main
+        # variables you want to pass in - accessed as env variables - INPUT_<VAR_NAME_HERE>
         with:
           im_a_bool: true
-        #with:
-        #  files: test.md
-        #  blacklist:  https://www.github.com/paramt/this-doesnt-exist
+          # this variable is set in the environment as INPUT_IM_A_BOOL

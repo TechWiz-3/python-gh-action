@@ -9,6 +9,8 @@ inputs:
   var2:
     description: 'Variable that isn"t required'
     required: false
+  im_a_bool:
+    description: 'testing how booleans are converted to python'
 # outputs:
 #  time: # id of output
 #    description: 'The time we greeted you'

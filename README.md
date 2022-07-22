@@ -11,3 +11,6 @@ The most important files are:
 - action.yml - the file that interfaces the python and github action
 - .github/workflows/test.yml - running the github action in this repo as a test, demonstrating how input/options are entered
 - Dockerfile - setup the python script in the docker container (less important to look at)
+
+### Helpful notes
+* 'The workflow file' refers to the file where one invokes the github action to run on their project. You can find your workflows in `.github/workflows/`. In our case our workflow file is called `test.yml` which runs our github action on our own repo for testing. 

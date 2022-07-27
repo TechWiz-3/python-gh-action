@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
-# this makes the script executable - not required
+# this makes the script executable
+# this IS REQUIRED if the file is the
+# entrypoint specified in the Dockerfile
 
 from os import getenv
 

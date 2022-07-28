@@ -14,3 +14,7 @@ The most important files are:
 
 ### Helpful notes
 * 'The workflow file' refers to the file where one invokes the github action to run on their project. You can find your workflows in `.github/workflows/`. In our case our workflow file is called `test.yml` which runs our github action on our own repo for testing. 
+
+---
+### 🎉 Commit labels
+If you're interested in the commit labels used in this repo, check out the [git commit emoji](https://github.com/TechWiz-3/       git-commit-emojis) project

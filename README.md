@@ -17,4 +17,4 @@ The most important files are:
 
 ---
 ### 🎉 Commit labels
-If you're interested in the commit labels used in this repo, check out the [git commit emoji](https://github.com/TechWiz-3/       git-commit-emojis) project
+If you're interested in the commit labels used in this repo, check out the [git commit emoji](https://github.com/TechWiz-3/git-commit-emojis) project

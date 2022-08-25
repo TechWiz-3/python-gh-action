@@ -9,7 +9,7 @@ from os import getenv
 var_a = getenv("INPUT_VAR1")
 unrequired_input = getenv("INPUT_VAR2")
 bool_handling = getenv("INPUT_IM_A_BOOL")
-PASSWD = getenv("INPUT_PASSWD")
+PASSWD = getenv("PASSWD")
 
 
 print("Ayo")

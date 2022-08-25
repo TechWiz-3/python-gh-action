@@ -10,6 +10,7 @@ jobs:
         # username/repo@branch/versiontag
         uses: TechWiz-3/python-gh-action@main
         # variables you want to pass in - accessed as env variables - INPUT_<VAR_NAME_HERE>
-        with:
+        with:  # passing in env variables defined in the action files
           im_a_bool: true
           # this variable is set in the environment as INPUT_IM_A_BOOL
+          test: "ayo"

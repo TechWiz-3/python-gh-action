@@ -9,8 +9,10 @@ from os import getenv
 var_a = getenv("INPUT_VAR1")
 unrequired_input = getenv("INPUT_VAR2")
 bool_handling = getenv("INPUT_IM_A_BOOL")
+bool_handling = getenv("PASSWD")
 
 print("Ayo")
 print(f"Variable 1 is {var_a}")
 print(f"Unrequired and unentered variable: {unrequired_input}")
 print(f"This was entered as 'true' in the workflow file: {bool_handling}")
+print(f"The github secret variable passed in is \"{PASSWD}\"")

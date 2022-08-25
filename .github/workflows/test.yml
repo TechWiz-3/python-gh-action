@@ -10,7 +10,8 @@ jobs:
         # username/repo@branch/versiontag
         uses: TechWiz-3/python-gh-action@main
         # variables you want to pass in - accessed as env variables - INPUT_<VAR_NAME_HERE>
-        with:  # passing in env variables defined in the action files
+        with:  # passing in env variables defined in the action.yml file
           im_a_bool: true
-          # this variable is set in the environment as INPUT_IM_A_BOOL
-          test: "ayo"
+          # this variable is now set in the docker environment as INPUT_IM_A_BOOL
+        env:  # passing in env variables not defined in the action.yml file
+          PASSWD: ${{ secrets.SECRET_PASSWD }}

@@ -13,5 +13,6 @@ jobs:
         with:  # passing in env variables defined in the action.yml file
           im_a_bool: true
           # this variable is now set in the docker environment as INPUT_IM_A_BOOL
+          passwd: ${{ secrets.SECRET_PASSWD }}
         env:  # passing in env variables not defined in the action.yml file
           PASSWD: ${{ secrets.SECRET_PASSWD }}

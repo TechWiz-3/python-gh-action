@@ -10,7 +10,7 @@ from os import environ
 var_a = getenv("INPUT_VAR1")
 unrequired_input = getenv("INPUT_VAR2")
 bool_handling = getenv("INPUT_IM_A_BOOL")
-PASSWD = environ["PASSWD"]
+PASSWD = environ.get["PASSWD"]
 
 
 print("Ayo")

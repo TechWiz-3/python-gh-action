@@ -4,13 +4,12 @@
 # entrypoint specified in the Dockerfile
 
 from os import getenv
-from os import environ
 
 # importing the inputs defined in action.yml and the workflow file
 var_a = getenv("INPUT_VAR1")
 unrequired_input = getenv("INPUT_VAR2")
 bool_handling = getenv("INPUT_IM_A_BOOL")
-PASSWD = environ.get["PASSWD"]
+PASSWD = getenv("INPUT_PASSWD")
 
 
 print("Ayo")

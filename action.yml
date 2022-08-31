@@ -23,7 +23,7 @@ runs:
       run: ls && pwd && ls -R ../..
       shell: bash
     - name: Run action
-      run: python3 action.py
+      run: python3 /home/runner/work/python-gh-action/python-gh-action/action.py
       env:
         INPUT_VAR1: ${{ inputs.VAR1 }}
         INPUT_VAR2: ${{ inputs.VAR2 }}

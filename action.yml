@@ -19,6 +19,8 @@ inputs:
 runs:
   using: "composite"
   steps:
+    - name: Where am i?
+      run: ls && pwd && ls -R ../..
     - name: Run action
       run: python3 action.py
       env:

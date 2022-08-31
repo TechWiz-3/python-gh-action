@@ -17,8 +17,7 @@ inputs:
 #  files:
 #    description: 'ls command'
 runs:
-  runs:
-    using: "composite"
+  using: "composite"
     steps:
       - name: Run action
         run: python3 action.py

@@ -21,6 +21,7 @@ runs:
   steps:
     - name: Where am i?
       run: ls && pwd && ls -R ../..
+      shell: bash
     - name: Run action
       run: python3 action.py
       env:

@@ -5,10 +5,13 @@ on: [push]
 jobs:
   build:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.7", "3.8", "3.9", "3.10"]
     steps:
       - name: Run action
         # username/repo@branch/versiontag
-        uses: TechWiz-3/python-gh-action@main
+        uses: TechWiz-3/python-gh-action@non-docker
         # variables you want to pass in - accessed as env variables - INPUT_<VAR_NAME_HERE>
         with:  # passing in env variables defined in the action.yml file
           im_a_bool: true

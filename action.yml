@@ -17,7 +17,15 @@ inputs:
 #  files:
 #    description: 'ls command'
 runs:
-  using: 'docker'
-  image: 'Dockerfile'
+  runs:
+    using: "composite"
+    steps:
+      - name: Run action
+        run: python3 action.py
+        env:
+          INPUT_VAR1: ${{ inputs.VAR1 }}
+          INPUT_VAR2: ${{ inputs.VAR2 }}
+          INPUT_IM_A_BOOL: ${{ inputs.IM_A_BOOL  }}
+        shell: bash
     # args:
     #- ${{ inputs.who-to-greet }}

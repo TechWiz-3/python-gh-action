@@ -19,9 +19,10 @@ inputs:
 runs:
   using: "composite"
   steps:
-    - name: Where am i?
-      run: ls && pwd && ls -R ../..
-      shell: bash
+    - name: setup python
+      uses: actions/setup-python@v3
+      with:
+        python-version: "3.9"
     - name: Run action
       run: python3 ../../_actions/TechWiz-3/python-gh-action/non-docker/action.py
       env:

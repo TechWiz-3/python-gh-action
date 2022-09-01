@@ -4,6 +4,7 @@
 # entrypoint specified in the Dockerfile
 
 from os import getenv
+from os import environ
 
 # importing the inputs defined in action.yml and the workflow file
 var_a = getenv("INPUT_VAR1")
@@ -17,3 +18,6 @@ print(f"Variable 1 is {var_a}")
 print(f"Unrequired and unentered variable: {unrequired_input}")
 print(f"This was entered as 'true' in the workflow file: {bool_handling}")
 print(f"The github secret variable passed in is \"{PASSWD}\"")
+
+
+environ["GITHUB_STEP_SUMMARY"] = "# :rocket: Action summary\n>It's pog, :sunglasses:"

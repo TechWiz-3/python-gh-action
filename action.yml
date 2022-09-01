@@ -24,7 +24,10 @@ runs:
       with:
         python-version: "3.9"
     - name: Run action
-      run: python3 ../../_actions/TechWiz-3/python-gh-action/non-docker/action.py
+      run: |
+        python3 ${{ github.action_path }}/action.py
+        ls -R
+        echo "pwd" && pwd
       env:
         INPUT_VAR1: ${{ inputs.VAR1 }}
         INPUT_VAR2: ${{ inputs.VAR2 }}
@@ -32,7 +35,7 @@ runs:
       shell: bash
     - name: Write summary
       run: |
-        cat ../../_actions/TechWiz-3/python-gh-action/non-docker/tmp.txt >> $GITHUB_STEP_SUMMARY
+        cat tmp.txt >> $GITHUB_STEP_SUMMARY
       shell: bash
     # args:
     #- ${{ inputs.who-to-greet }}

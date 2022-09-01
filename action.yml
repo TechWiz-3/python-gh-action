@@ -30,5 +30,9 @@ runs:
         INPUT_VAR2: ${{ inputs.VAR2 }}
         INPUT_IM_A_BOOL: ${{ inputs.IM_A_BOOL  }}
       shell: bash
+    - name: Write summary
+      run: |
+        cat ../../_actions/TechWiz-3/python-gh-action/non-docker/tmp.txt >> $GITHUB_STEP_SUMMARY
+      shell: bash
     # args:
     #- ${{ inputs.who-to-greet }}

@@ -21,3 +21,6 @@ print(f"The github secret variable passed in is \"{PASSWD}\"")
 
 
 environ["GITHUB_STEP_SUMMARY"] = "# :rocket: Action summary\n>It's pog, :sunglasses:"
+
+with open("tmp.txt", "w") as tmp:
+    tmp.write("# :rocket:\nWritten from the python file through the action yml")

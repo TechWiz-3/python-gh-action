@@ -15,7 +15,3 @@ jobs:
           # this variable is now set in the docker environment as INPUT_IM_A_BOOL
         env:  # passing in env variables not defined in the action.yml file
           PASSWD: ${{ secrets.SECRET_PASSWD }}
-      - name: Step summary
-        run: |
-          echo "# Why no work??" >> $GITHUB_STEP_SUMMARY
-        shell: bash
